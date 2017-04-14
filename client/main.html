@@ -1,25 +1,55 @@
 <head>
-  <title>microscope</title>
+  <title>Microscope</title>
 </head>
-
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <!-- <div class="container">
+    <header class="navbar navbar-default" role="navigation"> 
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Microscope</a>
+      </div>
+    </header>
+    <div id="main">
+      {{> postsList}}
+      
+    </div>
+  </div> -->
+  <div>
+    {{>linktest}}
+  </div>
+  <!-- ***************************************************************-->
+    </body>
+  <!--<template name="globalHelperExample">
+    <h3 class="page-header">全局helper示例</h3>
+    {{#each foods}}
+    <div class="row">
+      <div class="col-xs-4">
+        <input type="checkbox" checked="{{equal selected 'yes'}}">{{name}}
+      </div>
+    </div>
+    {{/each}}
 
-  {{> hello}}
-  {{> info}}
-</body>
+    <div class="row">
+      <div class="col-xs-4">
+        <select class="from-control">
+          {{#each foods}}
+          <option selected="{{equal selected 'yes'}}" value="{{name}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+  </template> -->
+<!-- ***************************************************************-->
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<!-- <template name="outside">
+  <button>父模板按钮</button>
+  {{>inside}}
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+<template name="inside">
+  <button>子模板按钮</button>
+</template> -->
+<!-- *************************************************************** -->
+
+<template name="linktest">
+  <a href="http://www.baidu.com">测试</a>
 </template>
